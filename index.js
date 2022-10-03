@@ -1,8 +1,13 @@
 function Header() {
   return (
-    <header>
-      <nav>
-        <img src='./react-logo.png' width='40px' />
+    <header className='header'>
+      <nav className='navbar'>
+        <img src='./react-logo.png' className='logo' />
+        <ul className='nav-items'>
+          <li>Pricing</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
       </nav>
     </header>
   )
@@ -10,21 +15,21 @@ function Header() {
 
 function MainContent() {
   return (
-    <div>
+    <div className='main-content'>
       <h1>Why I'm excited to learn React</h1>
-      <ul>
+      <ol className='main-list'>
         <li>I want to be a great developer</li>
         <li>I want to build cool projects</li>
         <li>I want to advance my career</li>
         <li>React is fun</li>
-      </ul>
+      </ol>
     </div>
   )
 }
 
 function Footer() {
   return (
-    <footer>
+    <footer className='footer'>
       <small>&copy; 2022 Muhashamy development. All rights reserved.</small>
     </footer>
   )
